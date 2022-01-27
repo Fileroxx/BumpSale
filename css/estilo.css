@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222 !important;
+  font-family: "Space Grotesk", sans-serif !important;
+}
+
+header {
+  width: 100%;
+  background: #171717 !important;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+header .newNavbar {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+.hamburguer {
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border-radius: 5px;
+  border: 0;
+
+  position: relative;
+  cursor: pointer;
+
+  display: none;
+}
+
+.hamburguer:after {
+  content: "";
+
+  position: absolute;
+  top: 35%;
+  left: 15%;
+
+  width: 70%;
+  height: 10%;
+  border-radius: 5px;
+
+  background: #fff;
+}
+
+.hamburguer::before {
+  content: "";
+
+  position: absolute;
+  top: 55%;
+  left: 15%;
+
+  width: 70%;
+  height: 10%;
+  border-radius: 5px;
+
+  background: #fff;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.entrar {
+  color: #030303;
+  border: 0;
+  background: #ffcd33;
+  width: 100%;
+  padding: 0.4rem 2rem;
+}
+
+.criarConta {
+  color: #ffcd33;
+  border: 0;
+  background: none;
+  border: 1px solid #ffcd33;
+  width: 100%;
+  padding: 0.4rem 2rem;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #8a8a8a;
+  transition: ease-in all 0.1s;
+}
+
+.menu li a:hover {
+  font-weight: 600;
+  color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+  .hamburguer {
+    display: block;
+    z-index: 999;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    border: 1px solid #171717;
+    height: 100vh;
+    margin: 0;
+    background-color: #222222;
+
+    width: 100%;
+    max-width: 250px;
+
+    padding: 100px 20px;
+
+    flex-direction: column;
+    transition: ease all 0.5s;
+  }
+
+  .menu .entrar {
+    margin-top: 40rem;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+}
+
+main {
+  padding-top: 15rem;
+}
+
+main h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+main p {
+  color: #f3f3f3;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+main button {
+  background: #ffcd33;
+  border: 0;
+  width: 50%;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
