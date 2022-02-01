@@ -6,10 +6,31 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #222222 !important;
   font-family: "Space Grotesk", sans-serif !important;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #414141;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffcd33;
+}
+
+/* Handle on hover */
 
 header {
   width: 100%;
@@ -475,5 +496,391 @@ main .imagem img {
     padding: 0.8rem 0;
     text-align: center;
     margin: 0 auto;
+  }
+
+  #ecommerce .imagem {
+    display: none;
+  }
+
+  #perpetuo .imagem {
+    display: none;
+  }
+
+  #lancamentos .imagem {
+    display: none;
+  }
+}
+
+#jornada {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  color: #fff;
+}
+
+#jornada h1 {
+  font-weight: 300;
+  color: #e7e7e7;
+  padding-top: 1rem;
+  font-size: 2.5rem;
+}
+
+#jornada .listra {
+  text-align: right;
+  padding-top: 3rem;
+}
+
+#jornada .cards {
+  padding-top: 3rem;
+}
+
+#jornada .newCard {
+  background: #4a4a4a;
+  padding: 2rem;
+  width: 100%;
+  height: 30vh;
+  margin: 1rem;
+  text-align: left;
+  transition: ease-in all 0.3s;
+}
+
+#jornada .c2 {
+  background: #414141;
+}
+
+#jornada .c3 {
+  background: #323232;
+}
+
+#jornada .c4 {
+  background: #323232;
+}
+
+#jornada .c5 {
+  background: #414141;
+}
+
+#jornada .titulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#jornada .titulo h5 {
+  color: #ffcd33;
+  font-weight: 400;
+}
+
+#jornada .newCard p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #e7e7e7;
+  padding-top: 1rem;
+}
+
+#jornada .titulo .icon {
+  text-align: right;
+}
+
+#jornada .titulo .icon img {
+  width: 70%;
+}
+
+#jornada .criar {
+  text-align: right;
+  padding-top: 1rem;
+}
+
+#jornada .criar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: ease-in all 0.3s;
+}
+
+#jornada .criar a:hover {
+  color: #ffcd33;
+}
+
+#jornada .criar i {
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  #jornada .listra {
+    display: none;
+  }
+
+  #jornada .newCard {
+    width: 90%;
+    height: 45vh;
+  }
+
+  #jornada .criar {
+    text-align: center;
+  }
+}
+
+#pago {
+  text-align: center;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#pago h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 0rem 5rem;
+}
+
+#pago .titulo p {
+  font-size: 1.2rem;
+  padding: 0 8rem;
+  color: #e7e7e7;
+  font-weight: 300;
+}
+
+#pago .cards {
+  padding-top: 1rem;
+}
+
+#pago .newCard {
+  background: #fff;
+  color: #323232;
+  width: 80%;
+  padding: 2rem;
+  height: 18vh;
+}
+
+#pago .icon {
+  padding-top: 1rem;
+}
+
+#pago .icon h3 {
+  font-size: 2.8rem;
+}
+
+#pago .newCard p {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#pago .botao button {
+  background: #ffcd33;
+  border: 0;
+  width: 50%;
+  margin-top: 4rem;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: ease-in all 0.3s;
+}
+
+#pago .botao button:hover {
+  background: #fff;
+  outline: none;
+}
+
+@media screen and (max-width: 990px) {
+  #pago h1 {
+    padding: 0;
+  }
+
+  #pago .titulo p {
+    padding: 0;
+  }
+
+  #pago .newCard {
+    margin: 0 auto;
+    height: 30vh;
+    margin-top: 1rem;
+  }
+}
+
+#conteudos {
+  background: url("../img/listraBackground.png"), #454545;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#conteudos h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  width: 40%;
+}
+
+#conteudos .cards {
+  padding-top: 3rem;
+}
+
+#conteudos .imagem {
+  text-align: left;
+  cursor: pointer;
+}
+
+#conteudos .newCard {
+  width: 100%;
+}
+
+#conteudos p {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 85%;
+}
+
+#conteudos .materia2 {
+  margin-top: 3rem;
+}
+
+#conteudos a {
+  color: #ffcd33;
+  text-decoration: none;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  #conteudos h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  #conteudos .newCard {
+    margin-top: 2rem;
+  }
+
+  #conteudos .newCard img {
+    width: 80%;
+  }
+}
+
+#duvidas {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#duvidas h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+  color: #f3f3f3;
+}
+
+#duvidas span {
+  font-weight: 300;
+}
+
+#duvidas .faq {
+  max-width: 1000px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+#duvidas .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#duvidas .question h3 {
+  font-size: 1.3rem;
+  color: #efefef;
+  font-weight: 400;
+}
+
+#duvidas .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+#duvidas .answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+#duvidas .faq.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+#duvidas .faq.active svg {
+  transform: rotate(180deg);
+}
+
+#duvidas svg {
+  transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #duvidas h1 {
+    font-size: 2.5rem;
+  }
+}
+
+footer {
+  background-color: #181818;
+  color: #efefef;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer .logo {
+  padding-bottom: 2rem;
+}
+
+footer .logo img {
+  width: 35%;
+}
+
+footer .links {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 2rem;
+  font-size: 1.1rem;
+  transition: ease-in all 0.3s;
+}
+
+footer .links a:hover {
+  color: #ffcd33;
+}
+
+footer .icons {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+footer .icons a {
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 990px) {
+  footer {
+    text-align: center;
   }
 }
