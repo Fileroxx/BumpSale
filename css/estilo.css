@@ -150,7 +150,13 @@ header .logo img {
   color: #fff;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .menu li a {
+    padding: 0 0.3rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
   .hamburguer {
     display: block;
     z-index: 999;
@@ -325,7 +331,9 @@ main .imagem img {
   }
 
   #apresentacao .navigation button {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
   }
 
   #apresentacao .navigation a {
@@ -450,6 +458,9 @@ main .imagem img {
 
 .tab-content {
   margin-top: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 #ecommerce {
@@ -537,7 +548,7 @@ main .imagem img {
   background: #4a4a4a;
   padding: 2rem;
   width: 100%;
-  height: 30vh;
+  height: 90%;
   margin: 1rem;
   text-align: left;
   transition: ease-in all 0.3s;
@@ -611,7 +622,7 @@ main .imagem img {
 
   #jornada .newCard {
     width: 90%;
-    height: 45vh;
+    height: 90%;
   }
 
   #jornada .criar {
@@ -648,7 +659,7 @@ main .imagem img {
   color: #323232;
   width: 80%;
   padding: 2rem;
-  height: 18vh;
+  height: 100%;
 }
 
 #pago .icon {
@@ -721,8 +732,12 @@ main .imagem img {
   cursor: pointer;
 }
 
+#conteudos .imagem img {
+  width: 90%;
+}
+
 #conteudos .newCard {
-  width: 100%;
+  width: 90%;
 }
 
 #conteudos p {
