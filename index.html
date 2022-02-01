@@ -33,10 +33,10 @@
                 <div class="hamburguer active"></div>
     
                 <ul class="menu active">
-                    <li><a href="#">Como usar</a></li>
-                    <li><a href="#">O que é?</a></li>
-                    <li><a href="#">Integrações</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#apresentacao">Como usar</a></li>
+                    <li><a href="#negocio">O que é?</a></li>
+                    <li><a href="#integracao">Integrações</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
     
                     <li><a href=""><button class="entrar">Entrar</button></a></li>
                     <li> <a href="#"><button class="criarConta">Criar conta</button></a></li>
@@ -106,27 +106,34 @@
 
                 <div class="col-xs-12 col-lg-5">
                     <div class="navigation">
-                        <button>  
-                                    <img src="img/orderbump.svg" alt="">                     
+                        <button data-tab-target="#orderBump">  
+                                    <img class="orderbump" src="img/orderbump.svg" alt="">                     
                                     OrderBump
                         </button>
     
-                        <button>             
-                                    <img src="img/raio.png" alt="">                    
-                                    Cross Sell                 
+                        <button data-tab-target="#crossSell"> 
+                            
+                                <div class="crosssell">
+                                    <img  src="img/raio.png" alt="">                    
+                                    Cross Sell 
+                                </div>
+                                                   
                         </button>
     
 
 
-                         <button>
-               
-                                    <img src="img/carrinho.png" alt="">            
-                                    DownSell                  
+                         <button data-tab-target="#downSell">
+                                
+                                <div class="downsell">
+                                    <img  src="img/carrinho.png" alt="">            
+                                    DownSell 
+                                </div>
+                                                   
                         </button>
 
                         
-                        <button>
-                                    <img src="img/carrinho.png" alt="">
+                        <button data-tab-target="#upSell">
+                                    <img class="upsell" src="img/carrinho.png" alt="">
                                     Upsell
                         </button>
     
@@ -138,9 +145,22 @@
                 </div>
 
                 <div class="col-xs-12 col-lg-7">
-                    <div class="video">
-                        <img width="100%" src="img/videoTeste.png" alt="">
+                    <div id="orderBump" data-tab-content class="active2">
+                        <img width="100%" src="img/orderBump.png" alt="">
                     </div>
+
+                    <div id="crossSell" data-tab-content>
+                        <img width="100%" src="img/crossSell.png" alt="">
+                    </div>
+
+                    <div id="downSell" data-tab-content>
+                        <img width="100%" src="img/downSell.png" alt="">
+                    </div>
+
+                    <div id="upSell" data-tab-content>
+                        <img width="100%" src="img/upSell.png" alt="">
+                    </div>
+
                 </div>
 
             </div>
@@ -250,7 +270,7 @@
 
                         <div class="col-xs-12 col-lg-6">
                             <div class="imagem">
-                                <img src="img/ecommerce.png" alt="">
+                                <img src="img/perpetuoFoto.png" alt="">
                             </div>
                         </div>
 
@@ -259,7 +279,7 @@
                                 <h3>Perpétuo</h3>
 
                                 <p>
-                                    O BumpSale é totalmente voltado para que, além de suas vendas aumentarem, o ticket médio por cliente também aumente, garantido dessa forma maior lucratividade para o seu e-commerce.    
+                                    Imagine o cliente navegando em sua loja e, ao invés de comprar apenas um produto, adqurir muito mais durante a mesma compra. Incrível, não é mesmo? O BumpSale faz exatamente isso durante a jornada de compra, criando ofertas para seu cliente comprar mais e você lucrar mais. 
                                 </p>
 
                             </div>
@@ -273,7 +293,7 @@
 
                         <div class="col-xs-12 col-lg-6">
                             <div class="imagem">
-                                <img src="img/ecommerce.png" alt="">
+                                <img src="img/lancamentosFoto.png" alt="">
                             </div>
                         </div>
 
@@ -282,7 +302,7 @@
                                 <h3>Lançamentos</h3>
 
                                 <p>
-                                    O BumpSale é totalmente voltado para que, além de suas vendas aumentarem, o ticket médio por cliente também aumente, garantido dessa forma maior lucratividade para o seu e-commerce.    
+                                    Sem você precisar investir mais nada, a inteligência por trás do BumpSale é capaz de criar condições de vendas excelentes, triplicando seus resultados, aumentando seu lucro e te ajudando a construri um negócio sustentável, com muito sucesso. 
                                 </p>
 
                             </div>

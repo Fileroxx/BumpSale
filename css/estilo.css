@@ -233,7 +233,7 @@ main .imagem {
 }
 
 main .imagem img {
-  width: 45%;
+  width: 50%;
 }
 
 @media screen and (max-width: 980px) {
@@ -291,13 +291,26 @@ main .imagem img {
   flex-direction: column;
 }
 
+#apresentacao .navigation button .crosssell {
+  margin-left: -0rem !important;
+}
+
+#apresentacao .navigation button .downsell {
+  margin-left: -1rem !important;
+}
+
+#apresentacao .navigation button .upsell {
+  margin-left: -2.7rem !important;
+  margin-right: 0.8rem;
+}
+
 #apresentacao .navigation button {
   background: #363636;
   color: #b4b2af;
   border: 0;
   margin: 0.5rem 0;
-  width: 80%;
-  padding: 1rem 0;
+  width: 60%;
+  padding: 0.8rem 0;
   font-size: 1.1rem;
   text-align: center;
   align-items: center;
@@ -307,8 +320,8 @@ main .imagem img {
 }
 
 #apresentacao .navigation button:hover {
-  color: #ffcd33;
-  background: #565656;
+  color: #030303;
+  background: #ffcd33;
 }
 
 #apresentacao .navigation button img {
@@ -316,6 +329,8 @@ main .imagem img {
   margin-right: 0.5rem;
   padding-right: 0.5rem;
   border-right: 1px solid #8a8a8a;
+  display: inline-flex;
+  align-items: center;
 }
 
 #apresentacao .navigation a {
@@ -401,6 +416,14 @@ main .imagem img {
   }
 }
 
+[data-tab-content-2] {
+  display: none;
+}
+
+.active2[data-tab-content-2] {
+  display: block;
+}
+
 [data-tab-content] {
   display: none;
 }
@@ -422,6 +445,11 @@ main .imagem img {
 
 #negocio h1 {
   text-align: center;
+}
+
+#negocio p {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 #negocio ul {
