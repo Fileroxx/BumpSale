@@ -54,6 +54,7 @@ header .newNavbar {
 
 header .logo img {
   width: 100%;
+  margin-left: -2rem;
 }
 
 .hamburguer {
@@ -236,7 +237,13 @@ main .imagem img {
   width: 50%;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  main .imagem img {
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
   main {
     background-position-x: 300px;
     background: none;
@@ -324,6 +331,11 @@ main .imagem img {
   background: #ffcd33;
 }
 
+#apresentacao .navigation button.active {
+  background: #ffcd33;
+  color: #030303;
+}
+
 #apresentacao .navigation button img {
   color: #fff;
   margin-right: 0.5rem;
@@ -333,16 +345,42 @@ main .imagem img {
   align-items: center;
 }
 
-#apresentacao .navigation a {
+#apresentacao .navigation .desktop {
+  padding-top: 5rem;
+}
+
+#apresentacao .navigation .desktop a {
   color: #e4e4e4;
   text-decoration: none;
-  padding-top: 5rem;
   font-size: 1.2rem;
+}
+
+#apresentacao .mobile {
+  display: none;
 }
 
 @media screen and (max-width: 980px) {
   #apresentacao h1 {
     padding: 0;
+  }
+
+  #apresentacao .mobile {
+    display: block;
+  }
+
+  #apresentacao .mobile a {
+    color: #e4e4e4;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  #apresentacao .desktop {
+    display: none;
+  }
+
+  #apresentacao .videos {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
 
   #apresentacao .navigation button {
@@ -406,22 +444,28 @@ main .imagem img {
     padding-bottom: 3rem;
   }
 
+  #integracao .listra {
+    text-align: center;
+  }
+
   #integracao h1 {
     font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #integracao p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  #integracao .botao {
+    text-align: center;
   }
 
   #integracao button {
     margin: 0;
     margin-top: 1rem;
   }
-}
-
-[data-tab-content-2] {
-  display: none;
-}
-
-.active2[data-tab-content-2] {
-  display: block;
 }
 
 [data-tab-content] {
@@ -474,7 +518,7 @@ main .imagem img {
   transition: all ease-in 0.3s;
 }
 
-.tab:active {
+.tab.active {
   background: #ffcd33;
   color: #030303;
 }
@@ -529,6 +573,10 @@ main .imagem img {
 }
 
 @media screen and (max-width: 990px) {
+  #negocio {
+    background: #393939;
+  }
+
   .tab {
     width: 100%;
     font-size: 0.8rem;
@@ -644,8 +692,17 @@ main .imagem img {
 }
 
 @media screen and (max-width: 980px) {
+  #jornada h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
   #jornada .listra {
     display: none;
+  }
+
+  #jornada .listraDourada {
+    text-align: center;
   }
 
   #jornada .newCard {
@@ -659,8 +716,10 @@ main .imagem img {
 }
 
 #pago {
+  background: #323232;
   text-align: center;
   color: #fff;
+  width: 100%;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -680,13 +739,19 @@ main .imagem img {
 
 #pago .cards {
   padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #pago .newCard {
   background: #fff;
   color: #323232;
-  width: 80%;
-  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 5rem;
   height: 100%;
 }
 
@@ -723,16 +788,24 @@ main .imagem img {
 @media screen and (max-width: 990px) {
   #pago h1 {
     padding: 0;
+    font-size: 2rem;
+    padding-top: 1rem;
   }
 
   #pago .titulo p {
     padding: 0;
+    font-size: 1.1rem;
   }
 
   #pago .newCard {
     margin: 0 auto;
     height: 30vh;
     margin-top: 1rem;
+    width: 90%;
+  }
+
+  #pago .botao button {
+    width: 90%;
   }
 }
 
@@ -789,10 +862,12 @@ main .imagem img {
   #conteudos h1 {
     width: 100%;
     font-size: 2.5rem;
+    text-align: center;
   }
 
   #conteudos .newCard {
     margin-top: 2rem;
+    margin-left: auto;
   }
 
   #conteudos .newCard img {
@@ -875,7 +950,8 @@ main .imagem img {
 
 @media screen and (max-width: 990px) {
   #duvidas h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-align: left;
   }
 }
 
@@ -895,9 +971,9 @@ footer .logo img {
 }
 
 footer .links {
-  text-align: center;
+  text-align: right;
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 
 footer .links a {
@@ -913,17 +989,30 @@ footer .links a:hover {
 }
 
 footer .icons {
-  text-align: center;
+  text-align: right;
   padding-top: 2rem;
 }
 
 footer .icons a {
-  padding-right: 1rem;
+  padding-right: 2rem;
   text-decoration: none;
 }
 
 @media screen and (max-width: 990px) {
   footer {
     text-align: center;
+  }
+
+  footer .links {
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer .icons {
+    text-align: center;
+  }
+
+  footer .icons a {
+    padding-right: 1rem;
   }
 }

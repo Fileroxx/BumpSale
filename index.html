@@ -30,9 +30,9 @@
                     <img src="img/logo.png" alt="">
                 </div>
     
-                <div class="hamburguer active"></div>
+                <div class="hamburguer "></div>
     
-                <ul class="menu active">
+                <ul class="menu">
                     <li><a href="#apresentacao">Como usar</a></li>
                     <li><a href="#negocio">O que é?</a></li>
                     <li><a href="#integracao">Integrações</a></li>
@@ -106,7 +106,7 @@
 
                 <div class="col-xs-12 col-lg-5">
                     <div class="navigation">
-                        <button data-tab-target="#orderBump">  
+                        <button class="active" data-tab-target="#orderBump">  
                                     <img class="orderbump" src="img/orderbump.svg" alt="">                     
                                     OrderBump
                         </button>
@@ -137,28 +137,40 @@
                                     Upsell
                         </button>
     
-    
-                        <a href="#">Fazer integração <i class="fas fa-long-arrow-alt-right"></i></a>
+                        
+                        <div class="desktop">
+                            <a href="#">Fazer integração <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                        
                     </div>
 
 
                 </div>
 
                 <div class="col-xs-12 col-lg-7">
-                    <div id="orderBump" data-tab-content class="active2">
-                        <img width="100%" src="img/orderBump.png" alt="">
-                    </div>
 
-                    <div id="crossSell" data-tab-content>
-                        <img width="100%" src="img/crossSell.png" alt="">
+                    <div class="videos">
+                        <div id="orderBump" data-tab-content class="active">
+                            <img width="100%" src="img/Orderbump.gif" alt="">
+                        </div>
+    
+                        <div id="crossSell" data-tab-content>
+                            <img width="100%" src="img/crossSell.png" alt="">
+                        </div>
+    
+                        <div id="downSell" data-tab-content>
+                            <img width="100%" src="img/downSell.png" alt="">
+                        </div>
+    
+                        <div id="upSell" data-tab-content>
+                            <img width="100%" src="img/upSell.png" alt="">
+                        </div>
+    
                     </div>
+                    
 
-                    <div id="downSell" data-tab-content>
-                        <img width="100%" src="img/downSell.png" alt="">
-                    </div>
-
-                    <div id="upSell" data-tab-content>
-                        <img width="100%" src="img/upSell.png" alt="">
+                    <div class="mobile">
+                        <a href="#">Fazer integração <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
 
                 </div>
@@ -210,8 +222,11 @@
                         aumentando suas vendas
                         imediatamente!
                     </p>
-
+                    
+                    <div class="botao">
                     <button>Fazer integração</button>
+                    </div>
+
 
                 </div>
 
@@ -240,7 +255,7 @@
     
             <div class="tab-content">
     
-                <div id="ecommerce" data-tab-content class="active">
+                <div id="ecommerce" class="active" data-tab-content >
 
                     <div class="row">
 
