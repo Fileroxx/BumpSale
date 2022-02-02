@@ -277,8 +277,8 @@ main .imagem img {
 }
 
 #apresentacao {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 #apresentacao .listra {
@@ -395,8 +395,8 @@ main .imagem img {
 }
 
 #integracao {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 #integracao h1 {
@@ -483,8 +483,8 @@ main .imagem img {
   background-position-x: 10%;
   background-size: 3%;
   background-position-y: 50px;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 #negocio h1 {
@@ -573,6 +573,13 @@ main .imagem img {
   color: #ffcd33;
 }
 
+@media screen and (max-width: 369px) {
+  #negocio .nav-link {
+    height: 5vh;
+    width: 90vw;
+  }
+}
+
 @media screen and (max-width: 990px) {
   #negocio {
     background: #393939;
@@ -600,8 +607,8 @@ main .imagem img {
 }
 
 #jornada {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
   color: #fff;
 }
 
@@ -721,8 +728,8 @@ main .imagem img {
   text-align: center;
   color: #fff;
   width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 #pago h1 {
@@ -815,8 +822,8 @@ main .imagem img {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 #conteudos h1 {
@@ -877,8 +884,8 @@ main .imagem img {
 }
 
 #duvidas {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 #duvidas h1 {
