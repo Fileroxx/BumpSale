@@ -15,6 +15,11 @@ body {
   font-family: "Space Grotesk", sans-serif !important;
 }
 
+a:visited {
+  text-decoration: none;
+  color: #030303;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -216,6 +221,7 @@ main p {
 
 main button {
   background: #ffcd33;
+  color: #030303;
   margin-top: 1rem;
   border: 0;
   width: 30%;
@@ -418,6 +424,7 @@ main .imagem img {
 
 #integracao button {
   background: #ffcd33;
+  color: #030303;
   border: 0;
   width: 70%;
   margin-top: 8rem;
@@ -779,6 +786,7 @@ main .imagem img {
 
 #pago .botao button {
   background: #ffcd33;
+  color: #030303;
   border: 0;
   width: 50%;
   margin-top: 4rem;
@@ -900,7 +908,7 @@ main .imagem img {
 }
 
 #duvidas .faq {
-  max-width: 1000px;
+  max-width: 1600px;
   margin-top: 2rem;
   padding-bottom: 1rem;
   cursor: pointer;
