@@ -246,16 +246,22 @@
 
             <h1>O BumpSale é para o seu negócio</h1>
 
-            <ul>
-                <li data-tab-target="#ecommerce" class="tab">E-commerce</li>
-                <li data-tab-target="#perpetuo" class="tab">Perpétuo</li>
-                <li data-tab-target="#lancamentos" class="tab">Lançamentos</li>
+            <ul class="nav nav-pills" id="myTab" role="tablist">
+                <li  class="nav-item" role="presentation">
+                    <button class="nav-link active" id="ecommerce-tab" data-bs-toggle="tab" data-bs-target="#ecommerce" type="button" role="tab" aria-controls="ecommerce" aria-selected="true">E-commerce</button>
+                </li>
+                <li  class="nav-item" role="presentation">
+                    <button class="nav-link" id="perpetuo-tab" data-bs-toggle="tab" data-bs-target="#perpetuo" type="button" role="tab" aria-controls="perpetuo" aria-selected="true">Perpétuo</button>   
+                </li>
+                <li  class="nav-item" role="presentation">
+                    <button class="nav-link" id="lancamentos-tab" data-bs-toggle="tab" data-bs-target="#lancamentos" type="button" role="tab" aria-controls="lancamentos" aria-selected="true">Lançamentos</button>    
+                </li>
             </ul>
     
     
             <div class="tab-content">
     
-                <div id="ecommerce" class="active" data-tab-content >
+                <div id="ecommerce" role="tabpanel" aria-labelledby="ecommerce-tab" class="tab-pane active">
 
                     <div class="row">
 
@@ -280,7 +286,7 @@
 
                 </div>
     
-                <div id="perpetuo" data-tab-content>
+                <div class="tab-pane" id="perpetuo" role="tabpanel" aria-labelledby="perpetuo-tab">
                     <div class="row">
 
                         <div class="col-xs-12 col-lg-6">
@@ -303,7 +309,7 @@
                     </div>
                 </div>
     
-                <div id="lancamentos" data-tab-content>
+                <div id="lancamentos" class="tab-pane" role="tabpanel" aria-labelledby="lancamentos-tab">
                     <div class="row">
 
                         <div class="col-xs-12 col-lg-6">
