@@ -165,7 +165,7 @@ header .logo img {
   .menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -100% !important;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
       0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
@@ -206,4 +206,99 @@ main h1 {
   font-weight: 300;
   font-size: 3rem;
   padding-right: 40rem;
+}
+
+.busca {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: left;
+  width: 100%;
+}
+
+.busca form input {
+  width: 85%;
+  padding: 0.6rem 0;
+  padding-left: 1rem;
+  outline: none;
+}
+
+.busca form button {
+  width: 13%;
+  padding: 0.7rem 0;
+  border: 0;
+  background: #030303;
+  color: #fff;
+}
+
+.cards {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.newCard p {
+  font-size: 1rem;
+  width: 90%;
+  padding-top: 1rem;
+}
+
+footer {
+  background-color: #181818;
+  color: #efefef;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer .logo {
+  padding-bottom: 2rem;
+}
+
+footer .logo img {
+  width: 35%;
+}
+
+footer .links {
+  text-align: right;
+  display: flex;
+  justify-content: right;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 2rem;
+  font-size: 1.1rem;
+  transition: ease-in all 0.3s;
+}
+
+footer .links a:hover {
+  color: #ffcd33;
+}
+
+footer .icons {
+  text-align: right;
+  padding-top: 2rem;
+}
+
+footer .icons a {
+  padding-right: 2rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 990px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .links {
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer .icons {
+    text-align: center;
+  }
+
+  footer .icons a {
+    padding-right: 1rem;
+  }
 }
