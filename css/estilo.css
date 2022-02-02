@@ -932,16 +932,21 @@ main .imagem img {
   color: #fff;
 }
 
+#duvidas i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 #duvidas .faq.active .answer {
   max-height: 300px;
   animation: fade 1s ease-in-out;
 }
 
-#duvidas .faq.active svg {
-  transform: rotate(180deg);
+#duvidas .faq.active i {
+  transform: rotate(90deg);
 }
 
-#duvidas svg {
+#duvidas i {
   transition: transform 0.5s ease-in;
 }
 
@@ -960,6 +965,14 @@ main .imagem img {
   #duvidas h1 {
     font-size: 2rem;
     text-align: left;
+  }
+
+  #duvidas .question h3 {
+    font-size: 1.2rem;
+  }
+
+  #duvidas .answer p {
+    font-size: 1rem;
   }
 }
 
