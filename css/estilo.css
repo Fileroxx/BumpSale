@@ -332,11 +332,6 @@ main .imagem img {
   transition: ease-in all 0.4s;
 }
 
-#apresentacao .navigation button:hover {
-  color: #030303;
-  background: #ffcd33;
-}
-
 #apresentacao .navigation button.active {
   background: #ffcd33;
   color: #030303;
